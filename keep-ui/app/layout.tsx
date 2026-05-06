@@ -57,8 +57,8 @@ export default async function RootLayout({
                 },
               },
               error: {
-                // Give errors a bit more time to be read
-                duration: 7000,
+                // Give errors more time to be read; bumped from 7s to 10s
+                duration: 10000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
