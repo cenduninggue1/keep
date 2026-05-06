@@ -58,7 +58,8 @@ export default async function RootLayout({
               },
               error: {
                 // Errors stay visible longer so they don't get missed
-                duration: 8000,
+                // Bumped from 8000 to 10000 — 8s felt too short for longer error messages
+                duration: 10000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
