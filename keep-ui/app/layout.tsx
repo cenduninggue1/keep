@@ -43,7 +43,8 @@ export default async function RootLayout({
           <Toaster
             position="top-right"
             toastOptions={{
-              duration: 4000,
+              // Increased default duration slightly for better readability
+              duration: 5000,
               style: {
                 background: "#363636",
                 color: "#fff",
@@ -56,7 +57,8 @@ export default async function RootLayout({
                 },
               },
               error: {
-                duration: 5000,
+                // Give errors a bit more time to be read
+                duration: 7000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
