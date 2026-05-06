@@ -58,9 +58,9 @@ export default async function RootLayout({
               },
               error: {
                 // Errors stay visible longer so they don't get missed.
-                // Increased to 15000ms — 10s still felt too short when
-                // reading longer error messages with stack trace info.
-                duration: 15000,
+                // Bumped from 15000ms to 20000ms — I kept missing longer
+                // error messages before I could finish reading them.
+                duration: 20000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
