@@ -58,10 +58,9 @@ export default async function RootLayout({
               },
               error: {
                 // Errors stay visible longer so they don't get missed.
-                // Bumped from 90000ms to 120000ms — 2 minutes feels like
-                // the right window when juggling multiple tabs during an
-                // incident. Easier to dismiss early than to miss it entirely.
-                duration: 120000,
+                // Keeping this at 60000ms (1 minute) — long enough to notice
+                // but the original 120000ms felt excessive for my single-user setup.
+                duration: 60000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
