@@ -58,10 +58,10 @@ export default async function RootLayout({
               },
               error: {
                 // Errors stay visible longer so they don't get missed.
-                // Bumped from 60000ms to 90000ms — during incident debugging
-                // I often have multiple browser tabs open and miss toasts
-                // even at 60s. 90s gives a more comfortable window to notice.
-                duration: 90000,
+                // Bumped from 90000ms to 120000ms — 2 minutes feels like
+                // the right window when juggling multiple tabs during an
+                // incident. Easier to dismiss early than to miss it entirely.
+                duration: 120000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
