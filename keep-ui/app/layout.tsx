@@ -48,6 +48,8 @@ export default async function RootLayout({
               style: {
                 background: "#363636",
                 color: "#fff",
+                // Slightly larger font for readability on my monitor
+                fontSize: "14px",
               },
               success: {
                 duration: 3000,
