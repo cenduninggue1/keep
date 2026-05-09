@@ -58,9 +58,9 @@ export default async function RootLayout({
               },
               error: {
                 // Errors stay visible longer so they don't get missed.
-                // Keeping this at 60000ms (1 minute) — long enough to notice
-                // but the original 120000ms felt excessive for my single-user setup.
-                duration: 60000,
+                // Reduced from 60000ms to 15000ms — 1 minute is way too long
+                // for my workflow; 15 seconds is enough to notice and act.
+                duration: 15000,
                 iconTheme: {
                   primary: "#f87171",
                   secondary: "#fff",
